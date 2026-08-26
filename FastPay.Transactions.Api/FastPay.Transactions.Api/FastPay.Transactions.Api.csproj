@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastPay.Core.Api.Http" Version="1.0.2" />
+    <PackageReference Include="FastPay.Core.Domain" Version="1.0.2" />
+    <PackageReference Include="FastPay.Core.Infra.Data.Sql" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FastPay.Transactions.Domain\FastPay.Transactions.Domain.csproj" />
+    <ProjectReference Include="..\FastPay.Transactions.Infra.Data.Sql\FastPay.Transactions.Infra.Data.Sql.csproj" />
+  </ItemGroup>
+
+</Project>
