@@ -16,7 +16,6 @@ public sealed class CreateAccountsCommandProfile : Profile
                  ? string.Format(Constants.ClientIdFormat,
                      int.Parse(src.ClientId)) : src.ClientId));
 
-        //$"CLI-{int.Parse(src.ClientId):D3}"
         CreateMap<Account, AccountResponseDto>();
     }
 }
